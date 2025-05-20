@@ -34,6 +34,7 @@ def image_to_hex_grid():
             for idx, block in enumerate(hex_blocks):
                 end_char = '),\n' if idx != len(hex_blocks) - 1 else ')'
                 f.write(f'自定义字符串(\n\t\t"{block}"{end_char}\n')
+                print(f'自定义字符串(\n\t\t"{block}"{end_char}\n')
 
     except Exception as e:
         print("发生错误:", str(e))
